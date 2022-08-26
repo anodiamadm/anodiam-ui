@@ -1,0 +1,24 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: anodiam-ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: anodiam-ui
+  template:
+    metadata:
+      labels:
+        app: anodiam-ui
+    spec:
+      containers:
+        - name: anodiam-ui
+          image: APP_IMAGE
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+          env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: "gcp"
