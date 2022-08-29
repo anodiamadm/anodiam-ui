@@ -1,0 +1,9 @@
+application:
+  name: anodiam-ui
+deployment:
+  dev:
+    branch: "feature/*"
+    namespace: "dev-ns"
+  uat:
+    branch: "develop"
+    namespace: "uat-ns"
