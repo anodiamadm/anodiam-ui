@@ -1,6 +1,6 @@
 application:
   name: anodiam-ui
-  buildPack: nodejs
+  buildPack: npm
 branch:
   feature:
     env: "DEV"
