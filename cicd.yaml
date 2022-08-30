@@ -1,9 +1,5 @@
-application:
-  name: anodiam-ui
-  buildPack: npm
 branch:
   feature:
-    env: "DEV"
     namespace: "dev-ns"
     manifestDir: "./k8s"
     project: "anodiamgcpproject"
@@ -11,7 +7,6 @@ branch:
     region: "us-central1"
     zone: "us-central1-c"
   develop:
-    env: "UAT"
     namespace: "uat-ns"
     manifestDir: "./k8s"
     project: "anodiamgcpproject"
@@ -19,7 +14,6 @@ branch:
     region: "us-central1"
     zone: "us-central1-c"
   main:
-    env: "PROD"
     namespace: "prod-ns"
     manifestDir: "./k8s"
     project: "anodiamgcpproject"
