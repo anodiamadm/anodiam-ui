@@ -1,9 +1,8 @@
 // ******************************************************
 // Service access URLs
 // ******************************************************
-
 const protocol = 'http';
-const server = '34.121.14.128';
+const server = window.LOGIN_SERVICE_IP;
 const loginPort = '80';
 const studentPort = '80';
 const signupPort = '80';

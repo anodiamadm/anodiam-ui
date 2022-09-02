@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: anodiam-ui-config
+data:
+  config.js: |
+    window.REACT_APP_LOGIN_SERVICE_IP="34.121.14.128";

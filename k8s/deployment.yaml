@@ -19,6 +19,11 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 80
-          env:
-            - name: SPRING_PROFILES_ACTIVE
-              value: "gcp"
+          volumeMounts:
+            - mountPath: /usr/share/nginx/html/config.js
+              name: config-js
+              subPath: config.js
+      volumes:
+        - configMap:
+            name: anodiam-ui-config
+          name: config-js
