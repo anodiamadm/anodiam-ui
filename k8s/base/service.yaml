@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: anodiam-ui
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: anodiam-ui
   ports:
