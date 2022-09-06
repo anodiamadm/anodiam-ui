@@ -1,15 +1,15 @@
 // ******************************************************
 // Service access URLs
 // ******************************************************
-const protocol = 'http';
-const server = window.LOGIN_SERVICE_IP;
-const loginPort = '80';
-const studentPort = '80';
-const signupPort = '80';
+//const protocol = 'http';
+//const server = window.LOGIN_SERVICE_IP;
+//const loginPort = '80';
+//const studentPort = '80';
+//const signupPort = '80';
 // const profilePort = '3000';
-const signupEndPoint = '/api/auth/signup/student'
-const loginEndPoint = '/api/auth/signin';
-const studentEndPoint = '/student';
+const signupEndPoint = '/anodiam-login-service/api/auth/signup/student'
+const loginEndPoint = '/anodiam-login-service/api/auth/signin';
+const studentEndPoint = '/anodiam-login-service/student';
 // const boardListEndPoint = '/api/master-data/boards';
 // const levelListEndPoint = '/api/master-data/levels';
 // const getProfileEndPoint = '/api/user/profile';
@@ -20,13 +20,13 @@ export function getUrl (targetFunction) {
   let url = '';
   switch (targetFunction) {
     case 'loginUrl':
-      url = protocol + '://' + server + ':' + loginPort + loginEndPoint;
+      url = loginEndPoint;
       break;
     case 'signupUrl':
       url = signupEndPoint;
       break;
     case 'studentUrl':
-      url = protocol + '://' + server + ':' + studentPort + studentEndPoint;
+      url = studentEndPoint;
       break;
     // case 'boardListUrl':
     //   url = protocol + '://' + server + ':' + profilePort + boardListEndPoint;

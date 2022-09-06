@@ -11,9 +11,11 @@ import AuthContextProvider from './contexts/AuthContext';
 import AnodiamAbout from './components/GenericComponents/AnodiamFooter/AnodiamAbout';
 import AnodiamContact from './components/GenericComponents/AnodiamFooter/AnodiamContact';
 
+const basename = document.querySelector('base')?.getAttribute('href') ?? '/'
+
 const App = () => {
   return (
-    <Router>
+    <Router basename={basename}>
       <AuthContextProvider>
         <AnodiamHeader />
         <Switch>
