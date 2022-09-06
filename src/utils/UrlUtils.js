@@ -23,7 +23,7 @@ export function getUrl (targetFunction) {
       url = protocol + '://' + server + ':' + loginPort + loginEndPoint;
       break;
     case 'signupUrl':
-      url = protocol + '://' + server + ':' + signupPort + signupEndPoint;
+      url = signupEndPoint;
       break;
     case 'studentUrl':
       url = protocol + '://' + server + ':' + studentPort + studentEndPoint;
@@ -41,7 +41,7 @@ export function getUrl (targetFunction) {
     //   url = protocol + '://' + server + ':' + profilePort + profileSaveEndPoint;
     //   break;
     default:
-      url = protocol + '://' + server + ':' + loginPort + loginEndPoint;
+      url = loginEndPoint;
   }
   return (url);
 }
