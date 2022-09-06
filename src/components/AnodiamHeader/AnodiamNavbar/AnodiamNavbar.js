@@ -11,7 +11,7 @@ const AnodiamNavbar = () => {
   return (
     <nav className="navbar navbar-expand-md anodiam-navbar">
       <NavLink to="#" exact>
-        <img src={ process.env.PUBLIC_URL + '/resources/images/AnodiamEnergyLogo.png' } alt='A' /><h1>nodiam</h1>
+        <img src={'./resources/images/AnodiamEnergyLogo.png' } alt='A' /><h1>nodiam</h1>
       </NavLink>
 
       <button
